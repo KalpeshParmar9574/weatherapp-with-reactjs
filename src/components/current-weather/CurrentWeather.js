@@ -1,15 +1,17 @@
 import './currentWeather.css'
 import React from 'react'
 
-export default function CurrentWeather({data}) {
+export default function CurrentWeather({ data }) {
+  console.log(data);
+ 
   return (
     <div className='wrapper'>
       <div className='top'>
         <div>
-          <p className='city'>{ data}</p>
-          <p className='weather-description'>sunny</p>
+          <p className='city'>{}</p>
+          <p className='weather-description'>{ }</p>
         </div>
-       <img src="icons/01d.png" alt="weather" className="weather-img"/>
+       <img src="icons/04d.png" alt="weather" className="weather-img"/>
       </div>
       <div className='bottom'>
         <p className='temperature'>22°C</p>
