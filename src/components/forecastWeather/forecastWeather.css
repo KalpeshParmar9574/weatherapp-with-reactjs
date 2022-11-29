@@ -1,0 +1,49 @@
+.daily-item{
+    background: transparent;
+    border: 20px black;
+   
+    border-radius: 15px;
+    height: 40px;
+    margin:5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  padding: 15px 5px;
+ 
+   
+}
+.small-icon{
+    height: 40px;
+    margin-left: 5px;
+}
+.day{
+    font-weight: 600;
+    color: black;
+    margin: 2px;
+    flex: 1 1;
+}
+.desc{
+    font-weight: 500;
+    flex: 1 1; 
+    margin-right:13px ;
+    text-align: right ;
+    
+}
+.min-max{
+    color: rgb(46, 44, 44);
+    font-weight: 400;
+}
+.forecast-details{
+    margin-left: -px;
+}
+.parameter-row{
+    grid-row-gap: 0;
+    grid-column-gap:10 ;
+    row-gap: 0;
+    column-gap: 10;
+    display: grid;
+    flex: 1 1;
+    padding: 5px 15px;
+    grid-template-columns: auto auto;
+}

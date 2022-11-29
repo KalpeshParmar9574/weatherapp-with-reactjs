@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(237, 244, 205);
+    /* background-color: rgb(237, 244, 205); */
+    background-image: url('./assets/bg-2.webp');
 }
 
 .container{

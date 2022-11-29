@@ -5,7 +5,8 @@
     margin: 50px auto 0px auto;
     width: 300px;
     padding: 0 20px 20px 20px;
-    background-color: #333;
+    /* background-color: #333; */
+    backdrop-filter: blur(10px);
     color: white;
 }
 
@@ -37,7 +38,12 @@
 .weather-img {
     width: 100px;
 }
-
+.title{
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 5px;
+   margin-bottom: -2px;
+}
 .temperature {
     font-weight: 600;
     font-size: 40px;
@@ -56,11 +62,12 @@
 .parameter-label{
     text-align: left;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
 
 }
 .parameter-value{
-    text-align: rigth;
-    font-weight: 600;
+    text-align:right;
+    font-weight: 500;
     font-size: 12px;
+    margin-right: -8px;
 }

@@ -8,29 +8,31 @@ export default function CurrentWeather({ data }) {
     <div className='wrapper'>
       <div className='top'>
         <div>
-          <p className='city'>{}</p>
-          <p className='weather-description'>{ }</p>
+          <p className='city'>{data.city}</p>
+          <p className='weather-description'>{data.weather[0].description }</p>
         </div>
-       <img src="icons/04d.png" alt="weather" className="weather-img"/>
+       <img src={`icons/${data.weather[0].icon}.png`} alt="weather" className="weather-img"/>
       </div>
       <div className='bottom'>
-        <p className='temperature'>22°C</p>
+        <p className='temperature'>{ data.main.temp}°C</p>
         <div className='details'>
+        <p className='title'>Details</p>
           <div className='parameter-row'>
-            <span className='parameter-label'>Feels like </span>
-            <span className='parameter-value'>22c</span>
+          
+            <span className='parameter-label'>Feels like</span>
+            <span className='parameter-value'>{ data.main.feels_like}°C</span>
           </div>
           <div className='parameter-row'>
             <span className='parameter-label'>Winds</span>
-            <span className='parameter-value'>2m/s</span>
+            <span className='parameter-value'>{ data.wind.speed}m/s</span>
           </div>
           <div className='parameter-row'>
             <span className='parameter-label'>Humidity </span>
-            <span className='parameter-value'>20%</span>
+            <span className='parameter-value'>{ data.main.humidity}%</span>
           </div>
           <div className='parameter-row'>
             <span className='parameter-label'>pressure </span>
-            <span className='parameter-value'>2hbs</span>
+            <span className='parameter-value'>{ data.main.pressure}hPa</span>
           </div>
         </div>
       </div>

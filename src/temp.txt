@@ -1,3 +1,48 @@
 open weather api key 
  cd49bda2baac5106b4d8de876ab870f1
 api:-https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+
+<AccordionItemButton>
+                                <div className='daily-item'>
+                                    <img src={`icons/${item.weather[0].icon}.png`} alt="weather" />
+                                    <label className='day'>{forecastdays[idx]}</label>
+                                    <label className='desc'>{item.weather[0].description}</label>
+                                    <label className='min-max'>{Math.round(item.main.temp_min)}°C/{Math.round(item.main.temp_max)}</label>
+                                </div>
+                            </AccordionItemButton>
+
+
+
+                                  <div className='wrapper'>
+                                <div className='top'>
+                                    <div>
+                                        <p className='city'>{forecastdays[idx]}</p>
+                                        <p className='weather-description'>{item.weather[0].description}</p>
+                                    </div>
+                                    <img src={`icons/${item.weather[0].icon}.png`} alt="weather" className="weather-img" />
+                                </div>
+                                <div className='bottom'>
+                                    <p className='temperature'>{Math.round(item.main.temp_min)}°C</p>
+                                    <div className='details'>
+                                        <p className='title'>Details</p>
+                                        <div className='parameter-row'>
+
+                                            <span className='parameter-label'>Feels like</span>
+                                            <span className='parameter-value'>{item.main.feels_like}°C</span>
+                                        </div>
+                                        <div className='parameter-row'>
+                                            <span className='parameter-label'>Winds</span>
+                                            <span className='parameter-value'>{item.wind.speed}m/s</span>
+                                        </div>
+                                        <div className='parameter-row'>
+                                            <span className='parameter-label'>Humidity </span>
+                                            <span className='parameter-value'>{item.main.humidity}%</span>
+                                        </div>
+                                        <div className='parameter-row'>
+                                            <span className='parameter-label'>pressure </span>
+                                            <span className='parameter-value'>{item.main.pressure}hPa</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
