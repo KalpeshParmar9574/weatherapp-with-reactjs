@@ -25,7 +25,7 @@ export default function ForecastWeather({ data }) {
                             </AccordionItemButton>
                         </AccordionItemHeading>
 
-                        <AccordionItemPanel>
+                        <AccordionItemPanel className='weather-details '>
                             <div className='forecast-details'>
                                
                                 <div className='parameter-row'>
