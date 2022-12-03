@@ -1,7 +1,4 @@
 .daily-item{
-    background: transparent;
-    border: 20px black;
-   
     border-radius: 15px;
     height: 40px;
     margin:5px;
@@ -46,4 +43,10 @@
     flex: 1 1;
     padding: 5px 15px;
     grid-template-columns: auto auto;
+}
+.weather-details{
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    font-weight: 400;
+    color:black;
 }
